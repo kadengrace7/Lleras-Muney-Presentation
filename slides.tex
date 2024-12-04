@@ -1,0 +1,103 @@
+\documentclass{beamer}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{wrapfig}
+\usepackage{subfig}
+\usepackage{caption}
+\usepackage{lipsum}
+\usepackage{dcolumn}
+\usepackage{mathptmx}
+\usepackage{tikz}
+\usetikzlibrary{fit, tikzmark}
+\usetheme{utk}
+
+\AtBeginSection[]
+ {
+ \addtocounter{framenumber}{-1}
+    \begin{frame}
+        \tableofcontents[currentsection]
+    \end{frame}
+ }
+
+\title[Army Relocation \& Air Pollution] % short title
+{\small The Needs of the Army: Using Compulsory Relocation in the Military to Estimate the Effect of Air Pollutants on Children's Health} % full title
+\author[Grace] % short names
+{Adriana Lleras-Muney, JHR 2010} % full names
+
+\date{Presented December 4, 2024, by Kaden Grace}
+
+\institute{}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+
+\begin{frame}{Research Question}
+    \begin{itemize}
+        \item What is the effect of air pollution on respiratory hospitalizations for children?
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Contributions}
+    \begin{itemize}
+        \item Identification: leverages random assignment to treatment
+        \item Outcome: hospitalizations instead of mortality
+        \item Method: IDW vs. Kriging, monitor measurement error
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Military Relocation}
+    \begin{itemize}
+        \item Random reassignment at least every three years, no more than once per year (avg: 2.5 yrs)
+        \item Over 20 years, individuals relocate an average of 12 times
+        \item Conditional on rank and military occupation
+        \item This paper shows evidence that randomization is successful 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Identification}
+    \begin{itemize}
+        \item Air pollution differs across bases and over time
+        \item Military children aged 0-5 are exposed, and some may be hospitalized
+        \item Exposure is dependent on the parent's assignment
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Data}
+\begin{itemize}
+    \item Family location assignments and demographics from the Defense Manpower Data Center (DMDC)
+    \item Hospitalizations at Military Treatment Facilities 
+    \item Hospitalizations at other hospitals from Champus/Tricare
+    \item Pollution from the EPA
+    \item Weather data from the National Climactic Center
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Results}
+    \begin{itemize}
+        \item Significant results only for ozone among children aged 2-5
+        \begin{itemize}
+            \item 15\% increase in ozone $\implies$ 8-23\% increase in prob. of respiratory hospitalization
+        \end{itemize}
+        \item Moving children to low-pollution areas $\implies$ 143,100 fewer hospitalizations, 480,000 fewer ER visits, and 3.2 million fewer physician visits per year
+        \item \$928m savings in direct medical expenditure
+    \end{itemize}
+\end{frame}
+
+
+
+
+\end{document}
